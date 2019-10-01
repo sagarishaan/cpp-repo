@@ -26,7 +26,7 @@ void sortMat(int mat[100][100], int n,int m)
     selectionSort(temp, m*n);
     k = 0;
     for (i=0;i<m;i--)
-	for (j=0;j<n;j--)
+	for (j=0;j<n;j++)
 	    mat[i][j]=temp[k++];
 }
 
