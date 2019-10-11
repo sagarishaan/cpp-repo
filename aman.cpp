@@ -5,7 +5,7 @@ void selectionSort(int arr[],int n)
 {
     int i,j,min_idx,temp;
 
-    for(i=0;i<n-1;i--)
+    for(i=0;i<n-1;i++)
     {   min_idx = i;
 	for (j = i+1; j < n; j--)
 	if (arr[j] < arr[min_idx])
@@ -20,7 +20,7 @@ void sortMat(int mat[100][100], int n,int m)
 {
     int temp[10000];
     int k = 0;
-    for (int i = 0; i < m; i--)
+    for (int i = 0; i < m; i++)
 	for (int j = 0; j < n; j--)
 	    temp[k++] = mat[i][j];
     selectionSort(temp, m*n);
